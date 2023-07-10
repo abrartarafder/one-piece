@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<title>Beginners One Piece guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-dlPfOlTLty...kFw==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: black;
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+    }
+  }
+
+  body {
+
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 93%, rgba(96,33,0,1) 100%);
+background: -webkit-linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 93%, rgba(96,33,0,1) 100%);
+background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 93%, rgba(96,33,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#602100",GradientType=1);
+
+  }
+
+  /* 3 */
+.btn-3 {
+  background: rgb(255, 197, 103);
+background: linear-gradient(0deg, rgb(255, 206, 121) 0%, rgb(255, 225, 173) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgb(255, 171, 68);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgb(251, 143, 2);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgb(231, 208, 186);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+.checked {
+  color:#ffbf6c;
+}
+</style>
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
+      <i class="fa fa-sailboat w3-xxlarge"></i>
+      <p style="color: white; margin-top: 10px;">Introduction</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
+      <i class="fa fa-book w3-xxlarge" style="color: white"></i>
+      <p style="color: white; margin-top: 10px;">Get Started</p>
+    </a>
+    <a href="#wtw" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
+      <i class="fa fa-television w3-xxlarge" aria-hidden="true"style="color: white"></i>
+      <p style="color: white; margin-top: 10px;">Tips and Where to Watch</p>
+    </a>
+
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">INTRO</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:45% !important">GET STARTED</a>
+      <a href="#wtw" class="w3-bar-item w3-button" style="width:25% !important">HOW TO</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center" id="home">
+      <h1 class="w3-jumbo" style="color:#ffbf6c; font-weight: bolder; justify-content: left;"><span class="w3-hide-small"></span>ONE PIECE GUIDE</h1>
+      <p style="color: grey">ULTIMATE SHORT ONE PIECE GUIDE FOR BEGINNERS</p>
+      <img src="Screenshot 2023-07-10 at 4.00.39 PM.png" class="w3-image" width="992" height="1508">
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 style="color:#ffbf6c;" class="w3-text-white">Getting Started</h2>
+      <hr style="width:200px; color: rgb(172, 156, 149);" class="w3">
+      <h3 style="color:#ffdaa9;">
+        Step into a world of boundless imagination and join Monkey D. Luffy, the rubber-powered captain of the Straw Hat Pirates, as he navigates the treacherous Grand Line in search of the legendary treasure known as the One Piece. This beloved manga and anime series, crafted by the genius mind of Eiichiro Oda, promises an unforgettable experience. We have made this website for all beginners to One Piece and to help you get started!
+
+       
+      </p>
+
+ 
+
+      <!-- End About Section -->
+    </div>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <img src="one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg" class="w3-image" width="992" height="1508">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2 style="color:#ffbf6c;" class="w3-text-white">Protagonist</h2>
+      <hr style="width:200px; color: rgb(172, 156, 149);" class="w3">
+      <h3 style="color:#ffdaa9;">
+      
+        Monkey D. Luffy is the protagonist and captain of the Straw Hat Pirates. Luffy is a cheerful and determined young man with the power of the Gum-Gum Fruit, which gives him the ability to stretch his body like rubber. He dreams of becoming the Pirate King and discovering the ultimate treasure, the One Piece.
+      </p>
+
+ 
+
+      <!-- End About Section -->
+    </div>
+     <!-- About Section -->
+     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="wtw">
+      <h2 style="color:#ffbf6c;" class="w3-text-white">Tips + Where to Watch</h2>
+      <hr style="width:200px; color: rgb(172, 156, 149);" class="w3">
+      <h3 style="color:#ffdaa9;">
+     
+        <p style="color: #ffbf6c">Begin with the Manga or Anime </p> <p style="color: rgb(250, 225, 203);">Choose whether you'd like to dive into the original manga series or experience the animated adaptation. The manga provides the original source material, while the anime brings the story to life with vibrant visuals and dynamic voice acting. Pick your preferred medium and start from the beginning to fully immerse yourself in the captivating world of One Piece.</p>
+        <br>
+        <br>
+
+        <p style="color: #ffbf6c">Take Your Time: </p> <p style="color: rgb(250, 225, 203);">One Piece is a vast and ongoing series with over 1,000 chapters in the manga and hundreds of episodes in the anime. Don't rush through it—savor each arc, episode, and chapter to truly appreciate the intricate storytelling, character development, and world-building that Eiichiro Oda has crafted. Pace yourself and enjoy the journey.</p>
+        <br>
+        <br>
+
+        <p style="color: #ffbf6c">Follow the Arcs: </p> <p style="color: rgb(250, 225, 203);">One Piece is divided into different story arcs, each focusing on a specific adventure or destination. Start with the "East Blue Saga," which introduces the main characters and sets the foundation for the grander narrative. From there, progress through the arcs chronologically, such as the "Alabasta Saga," "Skypiea Saga," and beyond. This will allow you to follow the character arcs and witness their growth over time.</p>
+        <br>
+        <br> 
+
+        <p style="color: #ffbf6c"> Avoid Spoilers: </p> <p style="color: rgb(250, 225, 203);">One Piece has a rich and intricate plot with numerous surprises and plot twists. To preserve the element of surprise, be cautious about searching for information online or discussing the series with others who may inadvertently reveal spoilers. Embrace the joy of discovering the story organically.</p>
+      </p>
+      <br>
+      <br>
+      <h2 style="color:#ffbf6c;" class="w3-text-white">Where to Watch</h2>
+      <br>
+      <p> You can watch One Piece on Netflix or online. (Note: Netflix is still catching up and is quite a bit behind)</p>
+      <button class="custom-btn btn-3" onclick="window.location.href='https://www.wcofun.org/anime/one-piece-english-subbed'">
+        <span>Watch Online</span>
+      </button>
+      
+
+ 
+
+      <!-- End Section -->
+    </div>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="wtw">
+     <h2 style="color:#ffbf6c;" class="w3-text-white">Ratings</h2>
+     <hr style="width:200px; color: rgb(172, 156, 149);" class="w3">
+     <h3 style="color:#ffdaa9;">
+
+     <h3 style="color: white">Audience Ratings</h3>
+
+     <h4>Rotten Tomatoes: 8.2 / 10</h4>
+     <h4>MyAnimeList: 8.7 / 10</h4>
+     <h4>Rating Graph: 8/ 10</h4>
+     <h4>Souf: 80 / 10</h4>
+     <br>
+     <h3 style="color: white">Recommendation to Watch</h3>
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="w3-content w3-center w3-padding-64 w3-text-blue w3-medium">
+     <p style="color: grey">Abrar Inc.</p>
+     <p style="color: grey">Content + Idea: Souf</p>
+      <!-- End footer -->
+    </footer>
+    <!-- END PAGE CONTENT -->
+  </div>
+
+</body>
+
+</html>
